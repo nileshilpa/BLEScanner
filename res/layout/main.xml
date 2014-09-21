@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <Button
+            android:id="@+id/start_scan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Scan"
+            android:enabled="true"/>
+
+    <Button
+            android:id="@+id/stop_scan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Scan"
+            android:enabled="false"/>
+
+    <TextView android:text="Devices Found"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textColor="#25ff34">
+
+    </TextView>
+    <ListView android:layout_width="match_parent"
+              android:layout_height="175dp"
+              android:id="@+id/mainListView">
+    </ListView>
+
+    <TextView android:text="Services Found"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textStyle="bold" android:textColor="#18ff0b">
+
+    </TextView>
+    <ListView android:layout_width="match_parent"
+              android:layout_height="400dp"
+              android:id="@+id/serviceListView">
+    </ListView>
+
+    <TextView android:text="Charastristics Found"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold" android:textColor="#18ff0b"
+              android:layout_gravity="left|center_vertical">
+    </TextView>
+    <ListView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/charListView">
+    </ListView>
+
+
+</LinearLayout>
+
